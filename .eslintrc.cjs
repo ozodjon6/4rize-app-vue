@@ -27,7 +27,7 @@ module.exports = {
   plugins: ['@typescript-eslint', 'vue', 'simple-import-sort'],
   rules: {
     'linebreak-style': ['error', 'unix'],
-    quotes: ['warn', 'single'],
+    quotes: ['warn', "double"],
     semi: ['warn', 'never'],
     'no-undef': 'off',
     '@typescript-eslint/no-unused-vars': 'warn',

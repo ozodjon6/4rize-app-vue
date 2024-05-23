@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>ABOUT PAGE</h1>
+    <h1 class="">ABOUT PAGE</h1>
     <button @click="store.doubleIncrement()">
       Double increment {{ store.getCount }}
     </button>
