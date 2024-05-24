@@ -1,40 +1,25 @@
 module.exports = {
+  root: true,
   env: {
-    browser: true,
+    node: true,
     es2021: true,
+    "vue/setup-compiler-macros": true,
   },
   extends: [
-    'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:vue/vue3-essential',
-    '@vue/eslint-config-typescript',
-    'plugin:prettier/recommended',
-  ],
-  overrides: [
-    {
-      files: [
-        'src/**/*.{vue,js,ts,json}',
-        'vite.config.{js,ts}',
-        '.eslintrc.{js,cjs}',
-      ],
-    },
+    "eslint:recommended",
+    "@vue/prettier",
+    "@vue/typescript/recommended",
+    "plugin:vue/vue3-essential",
+    "plugin:storybook/recommended",
+    "plugin:markdown/recommended",
   ],
   parserOptions: {
-    ecmaVersion: 'latest',
-    parser: '@typescript-eslint/parser',
-    sourceType: 'module',
+    ecmaVersion: 2020,
   },
-  plugins: ['@typescript-eslint', 'vue', 'simple-import-sort'],
   rules: {
-    'linebreak-style': ['error', 'unix'],
-    quotes: ['warn', "double"],
-    semi: ['warn', 'never'],
-    'no-undef': 'off',
-    '@typescript-eslint/no-unused-vars': 'warn',
-    '@typescript-eslint/no-explicit-any': 'warn',
-    'vue/multi-word-component-names': 'off',
-    'prettier/prettier': 'warn',
-    'simple-import-sort/imports': 'error',
-    'simple-import-sort/exports': 'error',
+    "no-console": "warn",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "vue/multi-word-component-names": "off",
+    "@typescript-eslint/no-explicit-any": "off",
   },
-}
+};
